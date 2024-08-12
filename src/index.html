@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header
+      style="
+        background-image: url(https://npf-prod.imgix.net/uploads/92e52a0b205e43b28f0fad900144da2e.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=1004&q=80&w=1600);
+      "
+      class="h-screen bg-no-repeat bg-cover"
+    >
+      <nav
+        class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900"
+      >
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+        >
+          <a
+            href="https://flowbite.com"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Flowbite</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="mega-menu-full"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="mega-menu-full"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            id="mega-menu-full"
+            class="hidden w-full md:flex md:w-auto md:order-1"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <button
+                  id="mega-menu-full-dropdown-button"
+                  data-collapse-toggle="mega-menu-full-dropdown"
+                  class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Company
+                  <svg
+                    class="w-2.5 h-2.5 ml-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Marketplace</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Resources</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          id="mega-menu-full-dropdown"
+          class="hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600"
+        >
+          <div
+            class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6"
+          >
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div class="font-semibold">Online Stores</div>
+                  <span class="text-sm text-gray-500 dark:text-gray-400"
+                    >Connect with third-party tools that you're already
+                    using.</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div class="font-semibold">Segmentation</div>
+                  <span class="text-sm text-gray-500 dark:text-gray-400"
+                    >Connect with third-party tools that you're already
+                    using.</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div class="font-semibold">Marketing CRM</div>
+                  <span class="text-sm text-gray-500 dark:text-gray-400"
+                    >Connect with third-party tools that you're already
+                    using.</span
+                  >
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div class="font-semibold">Online Stores</div>
+                  <span class="text-sm text-gray-500 dark:text-gray-400"
+                    >Connect with third-party tools that you're already
+                    using.</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div class="font-semibold">Segmentation</div>
+                  <span class="text-sm text-gray-500 dark:text-gray-400"
+                    >Connect with third-party tools that you're already
+                    using.</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div class="font-semibold">Marketing CRM</div>
+                  <span class="text-sm text-gray-500 dark:text-gray-400"
+                    >Connect with third-party tools that you're already
+                    using.</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-[1800px] mx-auto">
+      <section class="-mt-14 pl-4">
+        <div class="bg-gray-200 pl-10 py-10 flex flex-col gap-4">
+          <div class="flex flex-col gap-3">
+            <p class="text-red-600 text-base font-semibold">MISSIONS</p>
+            <p class="text-sm">Currently Active</p>
+            <p class="text-4xl font-bold">40</p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <p class="text-red-600 text-base font-semibold">TIME ON MARS</p>
+            <p class="text-sm">Mars Perservance</p>
+            <p class="text-4xl font-bold">03 : 05 : 25</p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <p class="text-red-600 text-base font-semibold">
+              DEEP SPACE NETWORK
+            </p>
+            <p class="text-sm">Currently Transmitting</p>
+            <p class="text-4xl font-bold">Mars Odyssey</p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <p class="text-red-600 text-base font-semibold">ASTEROID WATCH</p>
+            <p class="text-sm">Next Close Approach (Safe)</p>
+            <p class="text-4xl font-bold">Aug. 12, 2024</p>
+            <p class="text-black/40">Proximity 4,180,000 MI | KM</p>
+            <img src="./assets/svgs/right-arrow.svg" alt="arrow" width="30" />
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-20 pl-4">
+        <div class="flex flex-col gap-4">
+          <h2 class="text-2xl font-semibold">LATEST NEWS</h2>
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="https://d2pn8kiwq2w21t.cloudfront.net/images/1-MAIN-miri_exopla.2e16d0ba.fill-512x288-c70.format-jpeg.jpg"
+                      alt="img"
+                    />
+                    <h3 class="font-semibold">EXOPLANETS</h3>
+                    <p class="font-semibold text-xl">
+                      NASA’s Webb Images Cold Exoplanet 12 Light-Years Away
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="https://d2pn8kiwq2w21t.cloudfront.net/images/1-MAIN-miri_exopla.2e16d0ba.fill-512x288-c70.format-jpeg.jpg"
+                      alt="img"
+                    />
+                    <h3 class="font-semibold">EXOPLANETS</h3>
+                    <p class="font-semibold text-xl">
+                      NASA’s Webb Images Cold Exoplanet 12 Light-Years Away
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="https://d2pn8kiwq2w21t.cloudfront.net/images/1-MAIN-miri_exopla.2e16d0ba.fill-512x288-c70.format-jpeg.jpg"
+                      alt="img"
+                    />
+                    <h3 class="font-semibold">EXOPLANETS</h3>
+                    <p class="font-semibold text-xl">
+                      NASA’s Webb Images Cold Exoplanet 12 Light-Years Away
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev !hidden lg:!block"></div>
+            <div class="swiper-button-next !hidden lg:!block"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-8">
+        <img
+          src="https://d2pn8kiwq2w21t.cloudfront.net/images/jpl_day-1600px.2c48d329.fill-1024x306-c50.jpg"
+          alt=""
+          width="100%"
+        />
+      </section>
+
+      <section class="py-10 px-4">
+        <div class="">
+          <div class="flex flex-col gap-5">
+            <h2 class="font-semibold text-4xl">Jet Propulsion Laboratory</h2>
+            <p class="text-lg">
+              Have you been awed by views of desolate Martian Valleys, swirling
+              storms above Jupiter, and the icy blades ringing Saturn? Then you
+              have journeyed with NASA JPL spacecraft and rovers.
+            </p>
+            <p class="text-lg">
+              Our missions have flown to every planet and the Sun in a quest to
+              understand our place in the universe, and to search for the
+              possibility of life beyond Earth.
+            </p>
+            <button class="flex items-center gap-2">
+              <p class="text-red-600 font-semibold">LEARN MORE</p>
+              <span>
+                <img src="./assets/svgs/right-icon.svg" alt="icon" />
+              </span>
+            </button>
+          </div>
+          <div class="mt-10 flex justify-center items-center">
+            <div class="max-w-xs">
+              <img src="./assets/images/card-thumbnail.jpg" alt="card" />
+              <div class="p-6 flex flex-col gap-2 bg-white shadow-xl">
+                <h2 class="text-2xl">Virtual Tour</h2>
+                <p class="text-sm">
+                  Explore the JPL campus virtually with interactive 360
+                  panoramas of Mission Control, the Spacecraft Assembly
+                  Facility, the visitor museum, and more.
+                </p>
+                <button class="flex items-center gap-2">
+                  <p class="text-red-600 font-semibold">TAKE THE TOUR</p>
+                  <span>
+                    <img src="./assets/svgs/right-icon.svg" alt="icon" />
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-red-600 pt-6 text-center flex flex-col justify-center items-center gap-6"
+        >
+          <div class="bg-red-600 w-[100px] h-[1px]"></div>
+          <p class="italic text-xl font-semibold">
+            JPL is federally funded by NASA and managed by Caltech.
+          </p>
+          <div class="bg-red-600 w-[100px] h-[1px]"></div>
+        </div>
+      </section>
+
+      <section
+        style="background-image: url(./assets/images/bg-stars.jpg)"
+        class="pt-10 pb-20"
+      >
+        <div class="px-4 text-white flex flex-col gap-3">
+          <div class="flex justify-between">
+            <p class="text-red-600 font-semibold">MISSIONS</p>
+            <button class="hidden lg:block">
+              <p>ALL MISSIONS</p>
+              <span>
+                <img src="./assets/svgs/right-icon.svg" alt="icon" />
+              </span>
+            </button>
+          </div>
+          <h2 class="text-4xl font-semibold">Exploring the Universe</h2>
+          <p>
+            Spacecraft developed at JPL have flown to every planet in the solar
+            system and the Sun, and beyond.
+          </p>
+        </div>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide mr-10">
+                <div class="flex flex-col">
+                    <img src="https://d2pn8kiwq2w21t.cloudfront.net/images/Mars-800h-v2_02.width-320.png" alt="mars" class="object-cover max-w-sm">
+                    <div class="p-4 text-white">
+                        <h2>Mars</h2>
+                        <p>Current Missions: 4</p>
+                        <p>Past missions: 19</p>
+                        <button class="flex items-center gap-2">
+                            <p class="text-red-600 font-semibold">EXPLORE</p>
+                            <span>
+                              <img src="./assets/svgs/right-icon.svg" alt="icon" />
+                            </span>
+                          </button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide mr-10">
+                <div class="flex flex-col">
+                    <img src="https://d2pn8kiwq2w21t.cloudfront.net/images/Mars-800h-v2_02.width-320.png" alt="mars" class="object-cover max-w-sm">
+                    <div class="p-4 text-white">
+                        <h2>Mars</h2>
+                        <p>Current Missions: 4</p>
+                        <p>Past missions: 19</p>
+                        <button class="flex items-center gap-2">
+                            <p class="text-red-600 font-semibold">EXPLORE</p>
+                            <span>
+                              <img src="./assets/svgs/right-icon.svg" alt="icon" />
+                            </span>
+                          </button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide mr-10">
+                <div class="flex flex-col">
+                    <img src="https://d2pn8kiwq2w21t.cloudfront.net/images/Mars-800h-v2_02.width-320.png" alt="mars" class="object-cover max-w-sm">
+                    <div class="p-4 text-white">
+                        <h2>Mars</h2>
+                        <p>Current Missions: 4</p>
+                        <p>Past missions: 19</p>
+                        <button class="flex items-center gap-2">
+                            <p class="text-red-600 font-semibold">EXPLORE</p>
+                            <span>
+                              <img src="./assets/svgs/right-icon.svg" alt="icon" />
+                            </span>
+                          </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev !hidden lg:!block">
+                <img src="./assets/svgs/swiper-prev.svg" alt="">
+            </div>
+            <div class="swiper-button-next !hidden lg:!block"></div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

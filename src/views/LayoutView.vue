@@ -1,9 +1,13 @@
-<script setup></script>
-
 <template>
-  <div id="app">
+  <div>
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  name: "LayoutView",
+};
+</script>
 
 <style scoped></style>

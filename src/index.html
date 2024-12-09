@@ -50,10 +50,8 @@
                 aria-current="page">Home</a>
             </li>
             <li>
-              <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown"
-                class="flex items-center justify-between w-full px-3 py-2 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
-                Company
-              </button>
+              <a href="#"
+                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Company</a>
             </li>
             <li>
               <a href="#"
@@ -158,7 +156,7 @@
     <section class="max-w-[1296px] w-full mx-auto pt-20 md:px-0 px-4 md:py-[40px] py-2">
       <div class="flex md:flex-row flex-col justify-between md:items-center mb-[1.5rem]">
         <h2 class="text-[3rem] font-bold">Featured News</h2>
-        <button class="focus:outline-none flex items-center gap-2">
+        <button class="focus:outline-none hidden md:flex items-center gap-2">
           <span class="text-[1.4rem] font-bold">More NASA News</span>
           <span>
             <img src="./assets/svgs/right-icon.svg" alt="icon" />
@@ -319,10 +317,10 @@
     </section>  
     
     <!-- Warm Up -->
-    <section class="max-w-full md:h-[55rem] h-full w-full pt-20 md:px-0 px-4 md:py-[40px] py-2">
+    <section class="max-w-full h-[55rem] w-full pt-20 md:px-0 px-4 md:py-[40px] py-2">
       <div class="relative h-full w-full bg-[url('/src/assets/images/warm-up/warm-up-bg-img.webp')] bg-cover bg-center">
         <div class="gradient z-0 top-0 left-0 absolute w-full h-full"></div>
-        <div class="absolute top-1/2 left-[33%] transform -translate-x-1/2 -translate-y-1/2">
+        <div class="absolute top-1/2 md:left-[33%] left-[48%] transform -translate-x-1/2 -translate-y-1/2">
           <div class="flex flex-col gap-4 items-start text-left">
             <h2 class="text-white fill-white text-[5rem] font-extrabold max-w-[630px] w-full leading-[5rem] break-words">
               Warm Up Your Holidays
@@ -436,9 +434,9 @@
     <section class="max-w-full h-[55rem] w-full pt-20 px-0 md:py-[40px] py-2">
       <div class="relative h-full w-full bg-[url('/src/assets/images/earth-information/earth.webp')] bg-cover bg-center">
         <div class="gradient z-0 top-0 left-0 absolute w-full h-full"></div>
-        <div class="absolute top-1/2 left-[33%] transform -translate-x-1/2 -translate-y-1/2">
+        <div class="absolute top-1/2 md:left-[33%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
           <div class="flex flex-col gap-4 items-start text-left">
-            <h2 class="text-white fill-white text-[5rem] font-extrabold max-w-[630px] w-full leading-[5rem] break-words">
+            <h2 class="text-white fill-white md:text-[5rem] text-[4rem] font-extrabold max-w-[630px] w-full leading-[5rem] break-words">
               Earth Information Center
             </h2>
             <span class="text-white fill-white max-w-[630px] w-full break-words mt-2 mb-4 text-[1.1rem]">
@@ -458,25 +456,25 @@
     <!-- More NASA Images -->
     <section class="max-w-[1296px] w-full mx-auto pt-20 md:px-0 px-4 md:py-[40px] py-2">
       <div class="flex md:flex-row flex-col justify-between md:items-center mb-[1.5rem]">
-        <h2 class="text-[3rem] font-bold">More NASA Images</h2>
+        <h2 class="text-2xl font-semibold">More NASA Images</h2>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 min-h-[25rem]">
+      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-1 min-h-[25rem]">
         <!-- Container 1 -->
         <div class="flex flex-col gap-3">
-          <div class="max-h-[230px] h-full w-full">
-            <div class="w-full h-full grid gap-1 grid-cols-1 md:grid-cols-2 grid-rows-2">
-              <div class="w-full h-full row-span-2">
+          <div class="md:max-h-[230px] h-full w-full">
+            <div class="w-full h-full grid gap-1 grid-cols-1 md:grid-cols-2 md:grid-rows-2 grid-rows-3">
+              <div class="w-full h-full md:row-span-2">
                 <img src="/src/assets/images/more-nasa-images/container-1/img-1.webp" alt="img-1" class="w-full h-full object-cover" />
               </div>
-              <div class="w-full h-full row-span-1">
+              <div class="w-full h-full md:row-span-1">
                 <img src="/src/assets/images/more-nasa-images/container-1/img-2.webp" alt="img-2" class="w-full h-full object-cover" />
               </div>
-              <div class="w-full h-full row-span-1">
+              <div class="w-full h-full md:row-span-1">
                 <img src="/src/assets/images/more-nasa-images/container-1/img-3.webp" alt="img-3" class="w-full h-full object-cover" />
               </div>
             </div>
           </div>
-          <div class="flex flex-col items-start gap-1 z-20  text-black max-w-full">
+          <div class="hidden md:flex flex-col items-start gap-1 z-20  text-black max-w-full">
             <p class="font-dm-mono font-medium text-[0.7rem] leading-[1em] tracking-[3.5px] uppercase">
               1 MIN READ
             </p>
@@ -491,20 +489,20 @@
 
         <!-- Container 2 -->
         <div class="flex flex-col gap-3">
-          <div class="max-h-[230px] h-full w-full">
-            <div class="w-full h-full grid gap-1 grid-cols-1 md:grid-cols-2 grid-rows-2">
-              <div class="w-full h-full row-span-2">
+          <div class="md:max-h-[230px] h-full w-full">
+            <div class="w-full h-full grid gap-1 grid-cols-1 md:grid-cols-2 md:grid-rows-2 grid-rows-3">
+              <div class="w-full h-full md:row-span-2">
                 <img src="/src/assets/images/featured-news/img-1.webp" alt="icon" class="w-full h-full object-cover" />
               </div>
-              <div class="w-full h-full row-span-1">
+              <div class="w-full h-full md:row-span-1">
                 <img src="/src/assets/images/featured-news/img-1.webp" alt="icon" class="w-full h-full object-cover" />
               </div>
-              <div class="w-full h-full row-span-1">
+              <div class="w-full h-full md:row-span-1">
                 <img src="/src/assets/images/featured-news/img-1.webp" alt="icon" class="w-full h-full object-cover" />
               </div>
             </div>
           </div>
-          <div class="flex flex-col items-start gap-1 z-20  text-black max-w-full">
+          <div class="hidden md:flex flex-col items-start gap-1 z-20  text-black max-w-full">
             <p class="font-dm-mono font-medium text-[0.7rem] leading-[1em] tracking-[3.5px] uppercase">
               2 MIN READ
             </p>
@@ -519,20 +517,20 @@
 
         <!-- Container 3 -->
         <div class="flex flex-col gap-3">
-          <div class="max-h-[230px] h-full w-full">
-            <div class="w-full h-full grid gap-1 grid-cols-1 md:grid-cols-2 grid-rows-2">
-              <div class="w-full h-full row-span-2">
+          <div class="md:max-h-[230px] h-full w-full">
+            <div class="w-full h-full grid gap-1 grid-cols-1 md:grid-cols-2 md:grid-rows-2 grid-rows-3">
+              <div class="w-full h-full md:row-span-2">
                 <img src="/src/assets/images/featured-news/img-1.webp" alt="icon" class="w-full h-full object-cover" />
               </div>
-              <div class="w-full h-full row-span-1">
+              <div class="w-full h-full md:row-span-1">
                 <img src="/src/assets/images/featured-news/img-1.webp" alt="icon" class="w-full h-full object-cover" />
               </div>
-              <div class="w-full h-full row-span-1">
+              <div class="w-full h-full md:row-span-1">
                 <img src="/src/assets/images/featured-news/img-1.webp" alt="icon" class="w-full h-full object-cover" />
               </div>
             </div>
           </div>
-          <div class="flex flex-col items-start gap-1 z-20  text-black max-w-full">
+          <div class="hidden md:flex flex-col items-start gap-1 z-20  text-black max-w-full">
             <p class="font-dm-mono font-medium text-[0.7rem] leading-[1em] tracking-[3.5px] uppercase">
               3 MIN READ
             </p>
@@ -570,8 +568,8 @@
           </button>
         </div>
         <!-- Right Image Section -->
-        <div class="flex items-center justify-end md:max-w-1/3 w-full">
-          <div class="max-w-xs">
+        <div class="flex items-center md:justify-end justify-start md:max-w-1/3 w-full">
+          <div class="md:max-w-xs w-full">
             <img src="/src/assets/images/card-thumbnail.jpg" alt="card" class="w-full" />
             <div class="flex flex-col gap-2 p-6 bg-white shadow-xl">
               <h2 class="text-2xl">Virtual Tour</h2>
@@ -601,23 +599,7 @@
     </section>
 
 
-    <section class="w-full h-screen pt-10 pb-20 relative">
-      <!-- <div class="flex flex-col gap-3 px-4 text-white">
-        <div class="flex justify-between">
-          <p class="font-semibold text-red-600">MISSIONS</p>
-          <button class="hidden lg:block">
-            <p>ALL MISSIONS</p>
-            <span>
-              <img src="./assets/svgs/right-icon.svg" alt="icon" />
-            </span>
-          </button>
-        </div>
-        <h2 class="text-4xl font-semibold">Exploring the Universe</h2>
-        <p>
-          Spacecraft developed at JPL have flown to every planet in the solar
-          system and the Sun, and beyond.
-        </p>
-      </div> -->
+    <section class="w-full h-screen mx-auto pt-20 md:px-0 px-4 md:py-[40px] py-2 relative md:block hidden">
       <div class="gradient z-0 top-0 left-0 absolute w-full h-full"></div>
       <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
         <video height="auto" autoplay loop muted>
@@ -681,67 +663,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="swiper swiperSecond">
-        <div class="swiper-wrapper">
-          <div class="mr-10 swiper-slide">
-            <div class="flex flex-col">
-              <img src="https://d2pn8kiwq2w21t.cloudfront.net/images/Mars-800h-v2_02.width-320.png" alt="mars"
-                class="object-cover max-w-sm">
-              <div class="p-4 text-white">
-                <h2>Mars</h2>
-                <p>Current Missions: 4</p>
-                <p>Past missions: 19</p>
-                <button class="flex items-center gap-2">
-                  <p class="font-semibold text-red-600">EXPLORE</p>
-                  <span>
-                    <img src="./assets/svgs/right-icon.svg" alt="icon" />
-                  </span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="mr-10 swiper-slide">
-            <div class="flex flex-col">
-              <img src="https://d2pn8kiwq2w21t.cloudfront.net/images/Mars-800h-v2_02.width-320.png" alt="mars"
-                class="object-cover max-w-sm">
-              <div class="p-4 text-white">
-                <h2>Mars</h2>
-                <p>Current Missions: 4</p>
-                <p>Past missions: 19</p>
-                <button class="flex items-center gap-2">
-                  <p class="font-semibold text-red-600">EXPLORE</p>
-                  <span>
-                    <img src="./assets/svgs/right-icon.svg" alt="icon" />
-                  </span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="mr-10 swiper-slide">
-            <div class="flex flex-col">
-              <img src="https://d2pn8kiwq2w21t.cloudfront.net/images/Mars-800h-v2_02.width-320.png" alt="mars"
-                class="object-cover max-w-sm">
-              <div class="p-4 text-white">
-                <h2>Mars</h2>
-                <p>Current Missions: 4</p>
-                <p>Past missions: 19</p>
-                <button class="flex items-center gap-2">
-                  <p class="font-semibold text-red-600">EXPLORE</p>
-                  <span>
-                    <img src="./assets/svgs/right-icon.svg" alt="icon" />
-                  </span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-button-prev !hidden lg:!block">
-          <img src="./assets/svgs/swiper-prev.svg" alt="">
-        </div>
-        <div class="swiper-button-next !hidden lg:!block"></div>
-      </div> -->
       </div>
     </section>
   </main>
@@ -750,7 +671,7 @@
       <div class="w-full px-4 text-dark flex flex-col">
           <div class="max-w-[1296px] w-full mx-auto pt-20 md:px-0 px-4 md:py-[40px] py-2">
             <div class="w-full text-7xl font-bold">
-              <h1 class="w-full md:w-2/3">
+              <h1 class="w-full md:w-2/3 w-full">
                 How can we help you. get in touch
               </h1>
             </div>
@@ -786,5 +707,4 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./index.js"></script>
 </body>
-
-</html>
+  </html>

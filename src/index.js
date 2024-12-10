@@ -1,18 +1,18 @@
 //Main Swiper
-const mainSwiper = new Swiper(".swiper-container-main", {
-  // Optional parameters
-  grabCursor: true,
-  spaceBetween: 0,
-  slidesPerView: 1,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+// const mainSwiper = new Swiper(".swiper-container-main", {
+//   // Optional parameters
+//   grabCursor: true,
+//   spaceBetween: 0,
+//   slidesPerView: 1,
+//   loop: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
 
 // Latest News Swiper
 const LatestNewsSwiper = new Swiper(".swiper-container-latest-new", {
